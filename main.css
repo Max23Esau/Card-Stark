@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    height: 100vh;
+    font-family: 'Merriweather', serif;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.card {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 20px snow;
+}
+.card-head, .card-hero-parrafo, .footer-card {
+    padding: 0 20px;
+}
+.card-head {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+}
+
+.card-head div img{
+    width: 90%; 
+    height: 90%; 
+}
+
+.card-head-titles h1 {
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+.card-head-titles p {
+    margin: 0 0 10px 0;
+    color: gray;
+}
+.card-hero-parrafo p{
+    color: gray;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+.card-hero-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+.links a:hover{
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+.buttons img {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0 10px;
+}
